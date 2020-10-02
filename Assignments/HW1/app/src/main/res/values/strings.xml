@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">HW1</string>
+    <string name="tax">Tax</string>
+    <string name="insurance">Insurance</string>
+</resources>
