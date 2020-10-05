@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">ActivityLoaderActivity</string>
+    <string name="chooser_title">Choose Application</string>
+</resources>

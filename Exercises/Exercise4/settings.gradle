@@ -1,0 +1,3 @@
+include ':ActivityLoaderActivity'
+include ':MyBrowser'
+rootProject.name = "Exercise4"
