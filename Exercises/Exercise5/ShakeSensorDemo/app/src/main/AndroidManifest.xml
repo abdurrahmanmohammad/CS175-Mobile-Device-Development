@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="edu.sjsu.android.shakesensordemo"
+    android:versionCode="1"
+    android:versionName="1.0">
+    <!-- Change package name to match your project -->
+    <application
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name">
+        <!-- Change @drawable/ic_icon to @mipmap/ic_launcher -->
+        <activity
+            android:name=".SensorTestActivity"
+            android:configChanges="orientation"
+            android:label="@string/app_name">
+            <!-- Create SensorTestActivity class -->
+            <!-- Change from "edu.cs.shakesensordemo.SensorTestActivity" to ".SensorTestActivity" -->
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+    <uses-sdk android:minSdkVersion="9" />
+</manifest>

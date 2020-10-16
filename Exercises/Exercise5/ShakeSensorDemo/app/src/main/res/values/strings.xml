@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Shake Sensor Demo</string>
+    <string name="ui_shake_title">Shake to get a toast and to switch color</string>
+</resources>
