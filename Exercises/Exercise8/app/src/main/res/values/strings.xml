@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">MyContentProvider</string>
+    <string name="provider">edu.sjsu.android.mycontentprovider.College</string>
+</resources>

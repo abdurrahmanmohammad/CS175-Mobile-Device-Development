@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Stock Search Application</string>
+    <string name="stock_details">Stock Details</string>
+    <string name="favorites">Favorites</string>
+    <string name="fetching_data">Fetching Data...</string>
+    <string name="auto_refresh">Auto Refresh</string>
+    <string name="favorite">Favorite</string>
+    <string name="current_stock_information">Current Stock Information</string>
+    <string name="historical_data">Historical Data</string>
+    <string name="stock_name_symbol">Stock Name/Symbol</string>
+    <string name="clear">CLEAR</string>
+    <string name="get_quote">GET QUOTE</string>
+    <string name="token">17ec908108376090f305392d6fee05c4ca6f1624</string>
+</resources>

@@ -1,0 +1,3 @@
+include ':exercise2'
+include ':example1'
+rootProject.name = "Exercise 7"

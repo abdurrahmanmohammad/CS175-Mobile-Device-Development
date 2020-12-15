@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="16dp"
+    android:paddingTop="16dp"
+    android:paddingRight="16dp"
+    android:paddingBottom="16dp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/stockMarketViewer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:text="@string/stock_name_symbol"
+        android:textColor="#000000"
+        android:textStyle="bold" />
+
+    <AutoCompleteTextView
+        android:id="@+id/autoCompleteTextView"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/stockMarketViewer"
+        android:layout_centerHorizontal="true"
+        android:completionThreshold="3"
+        android:ems="10"
+        android:text=""
+        android:textColor="#000000"
+        tools:ignore="LabelFor" />
+
+    <Button
+        android:id="@+id/clearButton"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/autoCompleteTextView"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="10dp"
+        android:text="@string/clear" />
+
+    <Button
+        android:id="@+id/GetQuoteButton"
+        android:onClick="getQuote"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/autoCompleteTextView"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="10dp"
+        android:text="@string/get_quote" />
+
+    <TextView
+        android:id="@+id/favoriteTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/clearButton"
+        android:layout_alignParentStart="true"
+        android:text="@string/favorites"
+        android:textColor="#000000"
+        android:textStyle="bold" />
+
+    <Switch
+        android:id="@+id/autoRefreshSwitch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/favoriteTextView"
+        android:layout_alignEnd="@+id/GetQuoteButton"
+        android:layout_marginEnd="46dp"
+        android:text="@string/auto_refresh"
+        android:textColor="#050505"
+        android:textStyle="bold"
+        tools:ignore="UseSwitchCompatOrMaterialXml" />
+
+    <ImageButton
+        android:id="@+id/refreshImageButton"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignTop="@+id/autoRefreshSwitch"
+        android:layout_alignEnd="@+id/GetQuoteButton"
+        android:background="@android:color/transparent"
+        android:contentDescription="TODO"
+        android:scaleType="fitCenter"
+        android:src="@drawable/refresh_icon" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/favoriteStocksRecyclerView"
+        android:layout_width="345dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/favoriteTextView"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="8dp" />
+
+    <ProgressBar
+        android:id="@+id/progressBarFavorites"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/favoriteStocksRecyclerView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp" />
+
+    <TextView
+        android:id="@+id/fetchingTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/progressBarFavorites"
+        android:layout_centerInParent="true"
+        android:text="@string/fetching_data"
+        android:textColor="#000000" />
+
+</RelativeLayout>
